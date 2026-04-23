@@ -3,9 +3,7 @@ class Solution {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
 
         List<List<Integer>> result = new ArrayList<>();
-
         Arrays.sort(candidates);
-
         backtrack(candidates, target, 0, new ArrayList<>(), result);
 
         return result;
